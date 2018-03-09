@@ -3,31 +3,36 @@
     <head>
       <meta charset="utf-8">
       <title>HTML Academy: Девайс</title>
+      <link rel="stylesheet" href="css/style.css">
     </head>
         <body>
             <header class="main-header">
                 <nav class="main-navigation">
                     <a class="header-logo-link" href="index.html">
-                      <img src="img/logo-1.svc" alt="Логотип магазина Девайс" width="150" height="150">
+                      <img src="img/logo-device-hd.svg" alt="Логотип магазина Девайс" width="163" height="34">
                     </a>
                     <ul class="site-navigation">
-                        <li><a href="catalog.html">Каталог товаров</a>
-                            <ul class="site-navigation-subcatalog">
+                        <li><a href="#">Каталог товаров</a>
+                            <ul class="site-navigation-catalog col-1">
                                 <li>
                                     <a href="#">Виртуальная реальность</a>
                                 </li>
                                 <li>
-                                    <a>Моноподы для селфи</a>
+                                    <a class="catalog-current">Моноподы для селфи</a>
                                 </li>
                                 <li>
                                     <a href="#">Экшн-камеры</a>
                                 </li>
+                            </ul>
+                            <ul class="site-navigation-catalog col-2">
                                 <li>
                                     <a href="#">Фитнес-браслеты</a>
                                 </li>
                                 <li>
                                     <a href="#">Умные часы</a>
                                 </li>
+                            </ul>
+                            <ul class="site-navigation-catalog col-3">
                                 <li>
                                     <a href="#">Квадрокоптеры</a>
                                 </li>
@@ -44,7 +49,7 @@
                     <a href="#" class="main-navigation-cart">Корзина</a>
                     <form action="https://echo.htmlacademy.ru" method="GET">
                         <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-                        <input class="search-field" type="text" id="search-field">
+                        <input class="search-field" name="search-field" type="search" id="search-field" placeholder="Поиск по сайту">
                         <input class="search-submit" type="submit" id="search-submit" value="Найти">
                     </form>
                 </nav>
@@ -58,7 +63,52 @@
                 </ul>
                 <section class="filter">
                     <h2 class="filter-title">Фильтр:</h2>
-                    <!-- Здесь будет форма -->
+                    <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+                        <fieldset class="filter-cost">
+                            <legend>Стоимость:</legend>
+                            <label for="cost-range" class="visually-hidden">Диапазон цен</label>
+                            <input id="cost-range" class="cost-range" type="range" name="cost-range">
+                        </fieldset>
+                        <fieldset class="color-checkbox">
+                            <legend>Цвет:</legend>
+                            <ul>
+                                <li>
+                                    <label for="color-checkbox-black">Черный</label>
+                                    <input id="color-checkbox-black" class="visually-hidden color-checkbox-option black" type="checkbox" checked name="filter-color-black">
+                                </li>
+                                <li>
+                                    <label for="color-checkbox-white">Белый</label>
+                                    <input id="color-checkbox-white" class="visually-hidden color-checkbox-option white" type="checkbox" name="filter-color-white">
+                                </li>
+                                <li>
+                                    <label for="color-checkbox-blue">Синий</label>
+                                    <input id="color-checkbox-blue" class="visually-hidden color-checkbox-option blue" type="checkbox" checked name="filter-color-blue">
+                                </li>
+                                <li>
+                                    <label for="color-checkbox-red">Красный</label>
+                                    <input id="color-checkbox-red" class="visually-hidden color-checkbox-option red" type="checkbox" checked name="filter-color-red">
+                                </li>
+                                <li>
+                                    <label for="color-checkbox-pink">Розовый</label>
+                                    <input id="color-checkbox-pink" class="visually-hidden color-checkbox-option pink" type="checkbox" name="filter-color-pink">
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset>
+                           <legend>Bluetooth:</legend>
+                              <ul>
+                                  <li>
+                                      <label for="filter-bluetooth-yes">Да</label>
+                                      <input id="filter-bluetooth-yes" class="filter-bluetooth-option" type="radio" name="filter-bluetooth" value="bluetoosh-on" checked>
+                                  </li>
+                                  <li>
+                                      <label for="filter-bluetooth-no">Нет</label>
+                                      <input id="filter-bluetooth-no" class="filter-bluetooth-option" type="radio" value="bluetoosh-off" name="filter-bluetooth">
+                                  </li>
+                              </ul>
+                        </fieldset>
+                        <button class="button filter-form-submit" type="submit">Показать</button>
+                    </form>
                 </section>
                 <section class="sorter">
                     <h2 class="sorter-filter">Сортировка:</h2>
@@ -66,84 +116,110 @@
                 </section>
                 <section class="catalog">
                     <h2 class="visually-hidden">Список моноподов для селфи</h2>
-                    <article class="catalog-item">
-                        <h3><a href="#">Любительская селфи-палка<span class="mark-new"></span></a></h3> <!-- ссылка на страницу товара-->
-                        <p class="catalog-item-image">
-                            <a href="#"> <!-- ссылка на крупное изображение -->
-                                <img src="img/monopods-catalog-01.jpg" alt="Любительская селфи палка" width="230" height="230">
-                            </a>
-                        </p>
-                        <p>500 руб.</p>
-                        <input class="button add-to-cart" type="submit" value="Купить">
-                        <input class="button compare" type="submit" value="Добавить к сравнению">
-                    </article>
-                    <article class="catalog-item">
-                        <h3><a href="#">Профессиональная селфи-палка<span class="mark-new"></span></a></h3>
-                        <p class="catalog-item-image">
-                            <a href="#">
-                                <img src="img/monopods-catalog-02.jpg" alt="Профессиональная селфи палка" width="230" height="230">
-                            </a>
-                        </p>
-                        <p>1500 руб.</p>
-                        <input class="button add-to-cart" type="submit" value="Купить">
-                        <input class="button compare" type="submit" value="Добавить к сравнению">
-                    </article>
-                    <article class="catalog-item">
-                        <h3><a href="#">Непотопляемая селфи-палка<span class="mark-new"></span></a></h3>
-                        <p class="catalog-item-image">
-                            <a href="#">
-                                <img src="img/monopods-catalog-03.jpg" alt="Непотопляемая селфи палка" width="230" height="230">
-                            </a>
-                        </p>
-                        <p>2500 руб.</p>
-                        <input class="button add-to-cart" type="submit" value="Купить">
-                        <input class="button compare" type="submit" value="Добавить к сравнению">
-                    </article>
-                    <article class="catalog-item">
-                        <h3><a href="#">Селфи-палка следуй за мной<span class="mark-new"></span></a></h3>
-                        <p class="catalog-item-image">
-                            <a href="#">
-                                <img src="img/monopods-catalog-04.jpg" alt="Селфи-палка следуй за мной" width="230" height="230">
-                            </a>
-                        </p>
-                        <p>4900 руб.</p>
-                        <input class="button add-to-cart" type="submit" value="Купить">
-                        <input class="button compare" type="submit" value="Добавить к сравнению">
-                    </article>
+                    <ul class="catalog-list">
+                        <li class="catalog-item">
+                            <h3><a href="#">Любительская селфи-палка<span class="mark-new"></span></a></h3> <!-- ссылка на страницу товара-->
+                            <p class="catalog-item-image">
+                                <a href="#"> <!-- ссылка на крупное изображение -->
+                                    <img src="img/monopods-catalog-01.jpg" alt="Любительская селфи палка" width="360" height="380">
+                                </a>
+                            </p>
+                            <p>500 руб.</p>
+                            <input class="button add-to-cart" type="submit" value="Купить">
+                            <input class="button compare" type="submit" value="Добавить к сравнению">
+                        </li>
+                        <li class="catalog-item">
+                            <h3><a href="#">Профессиональная селфи-палка<span class="mark-new"></span></a></h3>
+                            <p class="catalog-item-image">
+                                <a href="#">
+                                    <img src="img/monopods-catalog-02.jpg" alt="Профессиональная селфи палка" width="360" height="380">
+                                </a>
+                            </p>
+                            <p>1500 руб.</p>
+                            <input class="button add-to-cart" type="submit" value="Купить">
+                            <input class="button compare" type="submit" value="Добавить к сравнению">
+                        </li>
+                        <li class="catalog-item">
+                            <h3><a href="#">Непотопляемая селфи-палка<span class="mark-new"></span></a></h3>
+                            <p class="catalog-item-image">
+                                <a href="#">
+                                    <img src="img/monopods-catalog-03.jpg" alt="Непотопляемая селфи палка" width="360" height="380">
+                                </a>
+                            </p>
+                            <p>2500 руб.</p>
+                            <input class="button add-to-cart" type="submit" value="Купить">
+                            <input class="button compare" type="submit" value="Добавить к сравнению">
+                        </li>
+                        <li class="catalog-item">
+                            <h3><a href="#">Селфи-палка следуй за мной<span class="mark-new"></span></a></h3>
+                            <p class="catalog-item-image">
+                                <a href="#">
+                                    <img src="img/monopods-catalog-04.jpg" alt="Селфи-палка следуй за мной" width="360" height="380">
+                                </a>
+                            </p>
+                            <p>4900 руб.</p>
+                            <input class="button add-to-cart" type="submit" value="Купить">
+                            <input class="button compare" type="submit" value="Добавить к сравнению">
+                        </li>
+                    </ul>
                     <ul class="pagination-list">
                         <li class="pagination-item pagination-item-current"><a>1</a></li>
                         <li class="pagination-item"><a href="#">2</a></li>
                         <li class="pagination-item"><a href="#">3</a></li>
                         <li class="pagination-next"><a href="#">Вперед</a></li>
                         <li class="pagination-back"><a href="#">Назад</a></li>
-                        
+
                     </ul>
                 </section>
             </main>
+
             <footer class="main-footer">
-                <a class="footer-logo-link" href="index.html">
-                  <img src="img/logo-2.svc" alt="Логотип магазина Девайс" width="150" height="150">
-                </a>
-                <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
-                <ul class="footer-navigation">
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Гарантия</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-                <ul class="footer-user-navigation">
-                    <li class="footer-login-link"><a href="#">Войти</a></li>
-                </ul>
-                <a href="#" class="footer-navigation-compare">Сравнить</a>
-                <a href="#" class="footer-navigation-cart">Корзина</a>
-                <ul class="footer-social-list">
-                    <li><a class="social-button" href="#">Вконтакте</a></li>
-                    <li><a class="social-button" href="#">Фейсбук</a></li>
-                    <li><a class="social-button" href="#">Инстаграм</a></li>
-                </ul>
-                <p class="footer-contacts"></p>
-                <div class="copyrights">
-                    <a href="https://htmlacademy.ru/intensive/htmlcss"><span></span></a>
-                </div>
+              <a class="footer-logo-link">
+                <img src="img/logo-device-ft.svg" alt="Логотип магазина Девайс" width="163" height="34">
+              </a>
+              <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
+              <ul class="footer-navigation">
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Гарантия</a></li>
+                  <li><a href="#">Контакты</a></li>
+              </ul>
+              <ul class="footer-user-navigation">
+                  <li class="footer-login-link"><a href="#">Войти</a></li>
+              </ul>
+              <a href="#" class="footer-navigation-compare">Сравнить</a>
+              <a href="#" class="footer-navigation-cart">Корзина</a>
+              <br/>
+              <ul class="footer-social-list">
+                  <li><a class="footer-social social-fb" href="#" aria-label="Фейсбук"></a></li>
+                  <li><a class="footer-social social-instagram" href="#" aria-label="Инстаграм"></a></li>
+                  <li><a class="footer-social social-twitter" href="#" aria-label="Твиттер"></a></li>
+              </ul>
+              <p class="footer-contacts"></p>
+              <p class="footer-copyrights"><a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка интенсив уровень 1 сайта htmlacademy"></a></p>
             </footer>
+
+            <section class="modal modal-feedback">
+                 <h2 class="visually-hidden">Напишите нам</h2>
+                 <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+                      <p>
+                          <label for="feedback-name">Ваше имя:</label>
+                          <input id="feedback-name" type="text" name="feedback-name" value="" placeholder="Имя Фамилия">
+                      </p>
+                      <p>
+                          <label for="feedback-email">Ваш e-mail:</label>
+                          <input id="feedback-email" type="email" name="feedback-email" value="" placeholder="email@example.com">
+                      </p>
+                      <p>
+                          <label for="feedback-text">Текст письма:</label>
+                          <textarea id="feedback-text" name="feedback-text" rows="10" placeholder="В свободной фоорме"></textarea>
+                      </p>
+                      <button class="button feedback-submit" type="submit">Отправить</button>
+                 </form>
+            </section>
+
+            <section class="modal modal-map">
+                 <h2 class="visually-hidden">Как до нас добраться</h2>
+                 <button class="visually-hidden modal-close" type="button">Закрыть</button>
+            </section>
         </body>
 </html>
