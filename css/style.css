@@ -1,0 +1,69 @@
+body {
+  background-color: #ffffff;
+}
+
+.main-footer {
+    background-color: #464646;
+}
+
+.footer-copyrights a {
+    display: block;
+    background-image: url("../img/logo-html.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 35px;
+    opacity: 1;
+}
+
+.footer-copyrights a:hover {
+    opacity: 0.6;
+}
+
+.footer-copyrights a:active {
+    opacity: 0.3;
+}
+
+.footer-social-list {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social-list  li {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.footer-social {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social:hover {
+    opacity: 1;
+}
+
+.footer-social:active {
+    opacity: 0.1;
+}
+
+.footer-social-list .social-fb {
+    background-image: url("../img/fb.svg");
+}
+
+.footer-social-list .social-instagram {
+    background-image: url("../img/instagram.svg");
+}
+
+.footer-social-list .social-twitter {
+    background-image: url("../img/twitter.svg");
+}
