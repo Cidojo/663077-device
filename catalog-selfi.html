@@ -3,6 +3,8 @@
     <head>
       <meta charset="utf-8">
       <title>HTML Academy: Девайс</title>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+      <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/style.css">
     </head>
         <body>
@@ -13,30 +15,32 @@
                     </a>
                     <ul class="site-navigation">
                         <li><a href="#">Каталог товаров</a>
-                            <ul class="site-navigation-catalog col-1">
-                                <li>
-                                    <a href="#">Виртуальная реальность</a>
-                                </li>
-                                <li>
-                                    <a class="catalog-current">Моноподы для селфи</a>
-                                </li>
-                                <li>
-                                    <a href="#">Экшн-камеры</a>
-                                </li>
-                            </ul>
-                            <ul class="site-navigation-catalog col-2">
-                                <li>
-                                    <a href="#">Фитнес-браслеты</a>
-                                </li>
-                                <li>
-                                    <a href="#">Умные часы</a>
-                                </li>
-                            </ul>
-                            <ul class="site-navigation-catalog col-3">
-                                <li>
-                                    <a href="#">Квадрокоптеры</a>
-                                </li>
-                            </ul>
+                            <div class="site-navigation-popup visually-hidden">
+                                <ul class="site-navigation-catalog col-1">
+                                    <li>
+                                        <a href="#">Виртуальная реальность</a>
+                                    </li>
+                                    <li>
+                                        <a class="catalog-current">Моноподы для селфи</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Экшн-камеры</a>
+                                    </li>
+                                </ul>
+                                <ul class="site-navigation-catalog col-2">
+                                    <li>
+                                        <a href="#">Фитнес-браслеты</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Умные часы</a>
+                                    </li>
+                                </ul>
+                                <ul class="site-navigation-catalog col-3">
+                                    <li>
+                                        <a href="#">Квадрокоптеры</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li><a href="#">Доставка</a></li>
                         <li><a href="#">Гарантия</a></li>
@@ -47,10 +51,10 @@
                     </ul>
                     <a href="#" class="main-navigation-compare">Сравнить</a>
                     <a href="#" class="main-navigation-cart">Корзина</a>
-                    <form action="https://echo.htmlacademy.ru" method="GET">
+                    <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
                         <label class="visually-hidden" for="search-field">Поиск по сайту</label>
                         <input class="search-field" name="search-field" type="search" id="search-field" placeholder="Поиск по сайту">
-                        <input class="search-submit" type="submit" id="search-submit" value="Найти">
+                        <button class="search-submit" type="submit" id="search-submit">Найти</button>
                     </form>
                 </nav>
             </header>
