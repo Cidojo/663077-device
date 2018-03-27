@@ -282,7 +282,7 @@ input[type="radio"].visually-hidden {
 .popular-item p:first-of-type {
     width: auto;
     margin-top: 80px;
-    z-index: 100;
+    z-index: 0;
 
     font-size: 47px;
     font-weight: 800;
@@ -812,4 +812,79 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     color: #000;
     letter-spacing: 0.2em;
+}
+
+.modal {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  color: #000;
+
+  background-color: #fff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-feedback {
+    padding: 40px;
+    width: 960px;
+    margin-left: -480px;
+    /* 480 */
+    box-sizing: border-box;
+}
+
+.feedback-close {
+    position: absolute;
+    top:20px;
+    right: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    font-size: 0;
+
+    background-color: #f7e296;
+    border: 0;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.feedback-close::before,
+.feedback-close::after {
+  content: "";
+
+  position: absolute;
+  right: 12px;
+  top: 26px;
+
+  width: 30px;
+  height: 2px;
+
+  background-color: #fff;
+}
+
+.feedback-close::before {
+    transform: rotate(45deg);
+}
+
+.feedback-close::after {
+    transform: rotate(-45deg);
+}
+
+.feedback-form label {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+}
+
+.feedback-form input[placeholder],
+.feedback-form textarea {
+    padding: 18px 20px;
+    padding-right: 0;
+
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    letter-spacing: none;
 }
