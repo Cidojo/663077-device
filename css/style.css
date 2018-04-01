@@ -286,7 +286,6 @@ input[type="radio"].visually-hidden {
 .header-user-column {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
 
     width: 510px;
     padding-top: 20px;
@@ -324,6 +323,7 @@ input[type="radio"].visually-hidden {
 
 .unlogin {
     padding: 0 20px;
+    color: rgba(0,0,0,0.3);
 }
 
 .login-link a::before,
@@ -816,16 +816,6 @@ input[type="radio"].visually-hidden {
     background-image: linear-gradient(to bottom, #fff 100px, #e5e5e5 100px, #e5e5e5);
 }
 
-.container-wide-catalog {
-    margin: 0 auto;
-    width: 100%;
-
-    background-color: #e5e5e5;
-    background-image: linear-gradient(to right, transparent 50%, #fff 50%, #fff);
-    background-position: left 0 top 70px;
-    background-repeat: no-repeat;
-}
-
 .services {
     display: flex;
     position: relative;
@@ -1224,7 +1214,7 @@ input[type="radio"].visually-hidden {
 
 .footer-user-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 
     width: 50%;
 
@@ -1241,33 +1231,23 @@ input[type="radio"].visually-hidden {
     font-size:0;
 
     list-style: none;
-}
+    }
 
-.footer-user-row ul {
-    display: inline-block;
-
-    margin-left: 94px;
+.footer-user-navigation {
+    margin-right: 10px;
 }
 
 .footer-user-navigation li {
     margin-right: 20px;
 }
 
-.footer-user-navigation li:last-child {
-    margin-right: 0;
-}
-
 .footer-navigation-compare {
     position: relative;
-
     padding-left: 35px;
-    margin-left: auto;
-    margin-right: 0;
 }
 
 .footer-navigation-cart {
     position: relative;
-
     padding-left: 35px;
     margin-left: 27px;
 }
@@ -1562,8 +1542,26 @@ input[type="radio"].visually-hidden {
     color: rgba(0, 0, 0, 0.1);
 }
 
+.container-wide-catalog {
+    margin: 0 auto;
+    width: 100%;
+
+    background-color: #fff;
+    background-image:
+      linear-gradient(to bottom, rgba(0,0,0,0.08) 70px, transparent 70px),
+      linear-gradient(to right, rgba(0,0,0,0.08) 50%, #fff 50%, #fff);
+    background-repeat: no-repeat;
+}
+
 .catalog-wrapper {
     display: flex;
+
+    background-color: #fff;
+
+}
+
+.filter {
+background-color: rgba(0,0,0,0.08);
 }
 
 .catalog-column {
@@ -1588,6 +1586,8 @@ input[type="radio"].visually-hidden {
 
     margin: 0;
     padding: 23px 60px;
+
+    background-color: rgba(0,0,0,0.08);
 }
 
 .filter-form {
@@ -1834,7 +1834,7 @@ input[type="radio"].visually-hidden {
     padding: 10px 70px;
     padding-right: 0;
 
-    background-color: #e5e5e5;
+    background-color: rgba(0,0,0,0.08);
 }
 
 .sorter-title {
