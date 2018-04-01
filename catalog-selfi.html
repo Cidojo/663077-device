@@ -12,11 +12,11 @@
         <header class="main-header">
             <div class="container">
                 <nav class="main-navigation">
-                    <a class="logo-device" href="index.html">Device</a>
+                    <p><a class="logo-device" href="index.html">Device</a></p>
                     <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
                         <input class="search-field" name="search-field" type="search" id="search-field" placeholder="Поиск по сайту">
                         <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-                        <button class="search-submit" type="submit" id="search-submit">Найти</button>
+                        <input class="search-submit" type="submit" id="search-submit" value="Найти">
                         <span class="search-icon"></span>
                     </form>
                     <div class="header-user-column">
@@ -29,7 +29,7 @@
                         <a href="#" class="main-navigation-cart">Корзина</a>
                     </div>
                     <ul class="site-navigation">
-                        <li><a href="#">Каталог товаров</a>
+                        <li class="site-navigation-item"><a href="#">Каталог товаров</a>
                             <div class="visually-hidden site-navigation-popup">
                                 <ul class="site-navigation-catalog col-1">
                                     <li>
@@ -57,9 +57,9 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Гарантия</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li class="site-navigation-item"><a href="#">Доставка</a></li>
+                        <li class="site-navigation-item"><a href="#">Гарантия</a></li>
+                        <li class="site-navigation-item"><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -133,7 +133,7 @@
                                       </li>
                                   </ul>
                             </fieldset>
-                            <button class="button filter-form-submit" type="submit">Показать</button>
+                            <input class="button filter-form-submit" type="submit" value="Показать">
                         </form>
                     </section>
                     <div class="catalog-column">
@@ -226,7 +226,7 @@
 
         <footer class="main-footer">
             <div class="footer-wrap container">
-                <a class="logo-device" href="index.html">Device</a>
+                <p><a class="logo-device" href="index.html">Device</a></p>
                 <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
                 <ul class="footer-navigation">
                     <li><a href="#">Доставка</a></li>
@@ -252,28 +252,5 @@
             </div>
         </footer>
 
-        <section class="modal modal-feedback">
-             <h2 class="visually-hidden">Напишите нам</h2>
-             <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-                  <p>
-                      <label for="feedback-name">Ваше имя:</label>
-                      <input id="feedback-name" type="text" name="feedback-name" value="" placeholder="Имя Фамилия">
-                  </p>
-                  <p>
-                      <label for="feedback-email">Ваш e-mail:</label>
-                      <input id="feedback-email" type="email" name="feedback-email" value="" placeholder="email@example.com">
-                  </p>
-                  <p>
-                      <label for="feedback-text">Текст письма:</label>
-                      <textarea id="feedback-text" name="feedback-text" rows="10" placeholder="В свободной форме"></textarea>
-                  </p>
-                  <button class="button feedback-submit" type="submit">Отправить</button>
-             </form>
-        </section>
-
-        <section class="modal modal-map">
-             <h2 class="visually-hidden">Как до нас добраться</h2>
-             <button class="button visually-hidden modal-close" type="button">Закрыть</button>
-        </section>
     </body>
 </html>

@@ -12,11 +12,11 @@
         <header class="main-header">
             <div class="container">
                 <nav class="main-navigation">
-                    <a class="logo-device">Device</a>
+                    <p><a class="logo-device index-logo-device">Device</a></p>
                     <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
                         <label class="visually-hidden" for="search-field">Поиск по сайту</label>
                         <input class="search-field" name="search-field" type="search" id="search-field" placeholder="Поиск по сайту">
-                        <button class="search-submit" type="submit" id="search-submit">Найти</button>
+                        <input class="search-submit" type="submit" id="search-submit" value="Найти">
                         <span class="search-icon"></span>
                     </form>
                     <div class="header-user-column">
@@ -29,8 +29,8 @@
                         <a href="#" class="main-navigation-cart">Корзина</a>
                     </div>
                     <ul class="site-navigation">
-                        <li><a href="#">Каталог товаров</a>
-                            <div class="visually-hidden site-navigation-popup">
+                        <li class="site-navigation-item popup-catalog-link"><a href="#">Каталог товаров</a>
+                            <div class="site-navigation-popup">
                                 <ul class="site-navigation-catalog col-1">
                                     <li>
                                         <a href="#">Виртуальная реальность</a>
@@ -44,7 +44,7 @@
                                 </ul>
                                 <ul class="site-navigation-catalog col-2">
                                     <li>
-                                        <a href="#">Фитнес-браслеты</a>
+                                        <a href="#" >Фитнес-браслеты</a>
                                     </li>
                                     <li>
                                         <a href="#">Умные часы</a>
@@ -57,9 +57,9 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Гарантия</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li class="site-navigation-item"><a href="#">Доставка</a></li>
+                        <li class="site-navigation-item"><a href="#">Гарантия</a></li>
+                        <li class="site-navigation-item"><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -275,7 +275,7 @@
 
         <footer class="main-footer">
             <div class="footer-wrap container">
-                <a class="logo-device" href="#">Device</a>
+                <p><a class="logo-device index-logo-device">Device</a></p>
                 <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
                 <ul class="footer-navigation">
                     <li><a href="#">Доставка</a></li>
@@ -291,7 +291,7 @@
                     <ul class="footer-user-navigation">
                         <li class="footer-login-link"><a href="#">Войти</a></li>
                         <li class="visually-hidden footer-user-logged"><a href="#">Валентин Петухов</a></li>
-                        <li class="visually-hidden footer-unlogin"><a href="#">Выйти</a></li>
+                        <li class="visually-hidden footer-unlogin"><a href="#" tabindex="-1">Выйти</a></li>
                     </ul>
                     <a href="#" class="footer-navigation-compare">Сравнить</a>
                     <a href="#" class="footer-navigation-cart">Корзина</a>
@@ -305,24 +305,27 @@
              <h2 class="visually-hidden">Напишите нам</h2>
              <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
                   <p>
-                      <label for="feedback-name">Ваше имя:</label>
+                      <label class="feedback-name" for="feedback-name">Ваше имя:</label>
                       <input id="feedback-name" type="text" name="feedback-name" value="" placeholder="Имя Фамилия">
                   </p>
                   <p>
-                      <label for="feedback-email">Ваш e-mail:</label>
+                      <label class="feedback-email" for="feedback-email">Ваш e-mail:</label>
                       <input id="feedback-email" type="email" name="feedback-email" value="" placeholder="email@example.com">
                   </p>
                   <p>
-                      <label for="feedback-text">Текст письма:</label>
-                      <textarea id="feedback-text" name="feedback-text" rows="10" placeholder="В свободной форме"></textarea>
+                      <label class="feedback-textarea" for="feedback-textarea">Текст письма:</label>
+                      <textarea id="feedback-textarea" name="feedback-textarea" rows="10" placeholder="В свободной форме"></textarea>
                   </p>
-                  <button class="button feedback-submit" type="submit">Отправить</button>
+                  <input class="button feedback-submit" type="submit" value="Отправить">
+                  <button class="feedback-close" type="button">Закрыть</button>
              </form>
         </section>
 
         <section class="modal modal-map visually-hidden">
              <h2 class="visually-hidden">Как до нас добраться</h2>
-             <button class="button visually-hidden modal-close" type="button">Закрыть</button>
+             <p><img src="img/map-big.jpg" width="994" height="593" alt="Наш адрес г.Москва, ул. Строителей, 15"></p>
+             <button class="map-close" type="button">Закрыть</button>
         </section>
+
     </body>
 </html>
