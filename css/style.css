@@ -2093,6 +2093,10 @@ background-color: rgba(0,0,0,0.08);
     width: 100%;
 }
 
+.catalog {
+    width: 100%;
+}
+
 .sorter {
     display: -webkit-box;
     display: -ms-flexbox;
