@@ -1702,7 +1702,7 @@ input[type="radio"].visually-hidden {
     width: 27px;
     height: 35px;
 
-    background-image: ;
+    background-image: url("../img/logo-html.svg");
     background-repeat: no-repeat;
 }
 
