@@ -31,7 +31,7 @@
                     <ul class="site-navigation">
                         <li class="site-navigation-item popup-catalog-link"><a href="#">Каталог товаров</a>
                             <div class="site-navigation-popup">
-                                <ul class="site-navigation-catalog col-1">
+                                <ul class="site-navigation-catalog">
                                     <li>
                                         <a href="#">Виртуальная реальность</a>
                                     </li>
@@ -42,7 +42,7 @@
                                         <a href="#">Экшн-камеры</a>
                                     </li>
                                 </ul>
-                                <ul class="site-navigation-catalog col-2">
+                                <ul class="site-navigation-catalog">
                                     <li>
                                         <a href="#" >Фитнес-браслеты</a>
                                     </li>
@@ -50,7 +50,7 @@
                                         <a href="#">Умные часы</a>
                                     </li>
                                 </ul>
-                                <ul class="site-navigation-catalog col-3">
+                                <ul class="site-navigation-catalog">
                                     <li>
                                         <a href="#">Квадрокоптеры</a>
                                     </li>
@@ -91,7 +91,7 @@
                                     <th>Материал</th>
                                 </tr>
                             </table>
-                            <a class="button-link button-link-about" href="#">Подробнее</a>
+                            <a class="button button-link-about" href="#">Подробнее</a>
                         </div>
                     </li>
                     <li class="popular-item visually-hidden">
@@ -112,7 +112,7 @@
                                         <th>Без подзарядки</th>
                                     </tr>
                             </table>
-                            <a class="button-link button-link-about" href="#">Подробнее</a>
+                            <a class="button button-link-about" href="#">Подробнее</a>
                         </div>
                     </li>
                     <li class="popular-item visually-hidden">
@@ -135,22 +135,22 @@
                                     <th>Радиус поражения</th>
                                 </tr>
                             </table>
-                            <a class="button-link button-link-about" href="#">Подробнее</a>
+                            <a class="button button-link-about" href="#">Подробнее</a>
                         </div>
                     </li>
                 </ol>
                 <ul class="popular-slider-controls">
                     <li>
-                        <input class="popular-slider-button popular-slider-1-btn" id="popular-slider-1-btn" type="radio" name="popular-slider" checked>
-                        <label for="popular-slider-1-btn"></label>
+                        <input class="popular-slider-button" id="popular-slider-1-btn" type="radio" name="popular-slider" checked>
+                        <label for="popular-slider-1-btn"><span class="visually-hidden">Слайдер 1</span></label>
                     </li>
                     <li>
-                        <input class="popular-slider-button popular-slider-2-btn" id="popular-slider-2-btn" type="radio" name="popular-slider">
-                        <label for="popular-slider-2-btn"></label>
+                        <input class="popular-slider-button" id="popular-slider-2-btn" type="radio" name="popular-slider">
+                        <label for="popular-slider-2-btn"><span class="visually-hidden">Слайдер 2</span></label>
                     </li>
                     <li>
-                        <input class="popular-slider-button popular-slider-3-btn" id="popular-slider-3-btn" type="radio" name="popular-slider">
-                        <label for="popular-slider-3-btn"></label>
+                        <input class="popular-slider-button" id="popular-slider-3-btn" type="radio" name="popular-slider">
+                        <label for="popular-slider-3-btn"><span class="visually-hidden">Слайдер 3</span></label>
                     </li>
                 </ul>
             </section>
@@ -160,38 +160,38 @@
                     <li class="catalog-reference-item">
                         <a href="#">
                             <div class="catalog-reference-icon"></div>
-                            <span class="catalog-reference-definition">Виртуальная реальность</span>
                         </a>
+                        <a href="#">Виртуальная реальность</a>
                     </li>
                     <li class="catalog-reference-item">
                           <a href="catalog-selfi.html">
                               <div class="catalog-reference-icon"></div>
-                              <span class="catalog-reference-definition">Моноподы для селфи</span>
                           </a>
+                          <a href="catalog-selfi.html">Моноподы для селфи</a>
                     </li>
                     <li class="catalog-reference-item">
                           <a href="#">
                               <div class="catalog-reference-icon"></div>
-                              <span class="catalog-reference-definition">Экшн&#8209;камеры</span>
                           </a>
+                          <a href="#">Экшн&#8209;камеры</a>
                     </li>
                     <li class="catalog-reference-item">
                           <a href="#">
                               <div class="catalog-reference-icon"></div>
-                              <span class="catalog-reference-definition">Фитнес&#8209;браслеты</span>
                           </a>
+                          <a href="#">Фитнес&#8209;браслеты</a>
                     </li>
                     <li class="catalog-reference-item">
                           <a href="#">
                               <div class="catalog-reference-icon"></div>
-                              <span class="catalog-reference-definition">Умные часы</span>
                           </a>
+                          <a href="#">Умные часы</a>
                     </li>
                     <li class="catalog-reference-item">
                           <a href="#">
                               <div class="catalog-reference-icon"></div>
-                              <span class="catalog-reference-definition">Квадрокоптеры</span>
                           </a>
+                          <a href="#">Квадрокоптеры</a>
                     </li>
                 </ul>
             </section>
@@ -200,16 +200,16 @@
                     <h3 class="visually-hidden">Наши сервисы</h3>
                     <ul class="services-slider-control">
                         <li>
-                            <input id="services-delivery" class="services-slider-button services-slider-1-btn visually-hidden" type="radio" name="services-slider-radio" checked>
-                            <label for="services-delivery">Доставка</label>
+                            <input id="services-delivery" class="services-slider-button visually-hidden" type="radio" name="services-slider-radio" checked>
+                            <label class="button" for="services-delivery">Доставка</label>
                         </li>
                         <li>
-                            <input id="services-warranty" class="services-slider-button services-slider-1-btn visually-hidden" type="radio" name="services-slider-radio">
-                            <label for="services-warranty">Гарантия</label>
+                            <input id="services-warranty" class="services-slider-button visually-hidden" type="radio" name="services-slider-radio">
+                            <label class="button" for="services-warranty">Гарантия</label>
                         </li>
                         <li>
-                            <input id="services-credit" class="services-slider-button services-slider-1-btn visually-hidden" type="radio" name="services-slider-radio">
-                            <label for="services-credit">Кредит</label>
+                            <input id="services-credit" class="services-slider-button visually-hidden" type="radio" name="services-slider-radio">
+                            <label class="button" for="services-credit">Кредит</label>
                         </li>
                     </ul>
                     <ul class="services-slider-list">
@@ -235,20 +235,20 @@
                 <h3 class="visually-hidden">Наши брэнды</h3>
                 <ul class="brands-list">
                     <li class="brands-item">
-                        <a class="pale" href="#"><img src="img/logo-DJI-pale.png" alt="Логотип DJI" width="260" height="100"></a>
-                        <a class="color" href="#"><img src="img/logo-DJI-color.png" alt="Логотип DJI" width="260" height="100"></a>
+                        <a class="pale" href="#"><img src="img/logo-dji-pale.png" alt="Логотип DJI" width="260" height="100"></a>
+                        <a class="color" href="#"><img src="img/logo-dji-color.png" alt="Логотип DJI" width="260" height="100"></a>
                     </li>
                     <li class="brands-item">
-                        <a class="pale" href="#"><img src="img/logo-gadgets-pale.png" alt="Логотип SP Gadgets" width="260" height="100"></a>
-                        <a class="color" href="#"><img src="img/logo-gadgets-color.png" alt="Логотип SP Gadgets" width="260" height="100"></a>
+                        <a class="pale" href="#"><img src="img/logo-sp-gadgets-pale.png" alt="Логотип SP Gadgets" width="260" height="100"></a>
+                        <a class="color" href="#"><img src="img/logo-sp-gadgets-color.png" alt="Логотип SP Gadgets" width="260" height="100"></a>
                     </li>
                     <li class="brands-item">
-                        <a class="pale" href="#"><img src="img/logo-GoPro-pale.png" alt="Логотип GoPro" width="260" height="100"></a>
-                        <a class="color" href="#"><img src="img/logo-GoPro-color.png" alt="Логотип GoPro" width="260" height="100"></a>
+                        <a class="pale" href="#"><img src="img/logo-gopro-pale.png" alt="Логотип GoPro" width="260" height="100"></a>
+                        <a class="color" href="#"><img src="img/logo-gopro-color.png" alt="Логотип GoPro" width="260" height="100"></a>
                     </li>
                     <li class="brands-item">
-                        <a class="pale" href="#"><img src="img/logo-Vive-pale.png" alt="Логотип Vive" width="260" height="100"></a>
-                        <a class="color" href="#"><img src="img/logo-Vive-color.png" alt="Логотип Vive" width="260" height="100"></a>
+                        <a class="pale" href="#"><img src="img/logo-vive-pale.png" alt="Логотип Vive" width="260" height="100"></a>
+                        <a class="color" href="#"><img src="img/logo-vive-color.png" alt="Логотип Vive" width="260" height="100"></a>
                     </li>
                 </ul>
             </section>
@@ -262,12 +262,12 @@
                       <li>Автотрейдинг</li>
                       <li>ЖелДорЭкспидиция</li>
                   </ul>
-                  <a class="button-link button-link-about-us" href="#">Подробнее о нас</a>
+                  <a class="button button-link-about-us" href="#">Подробнее о нас</a>
                 </section>
                 <section class="contacts">
                     <h3>Контакты</h3>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает</p>
-                    <a class="button-link button-link-contacts" href="#">Напишите нам</a> <br>
+                    <a class="button button-link-contacts" href="#">Напишите нам</a> <br>
                     <a class="contacts-map" href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.687031,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618"><img src="img/map.jpg" class="contacts-map" alt="Наш адрес г.Москва, ул. Строителей, 15" width="560" height="222"></a>
                 </section>
             </div>
@@ -283,15 +283,15 @@
                     <li><a href="#">Контакты</a></li>
                 </ul>
                 <ul class="footer-social-list">
-                    <li><a class="footer-social social-fb" href="#" aria-label="Фейсбук">Фейсбук</a></li>
-                    <li><a class="footer-social social-instagram" href="#" aria-label="Инстаграм">Инстаграм</a></li>
-                    <li><a class="footer-social social-twitter" href="#" aria-label="Твиттер">Твиттер</a></li>
+                    <li><a class="footer-social social-fb" href="#" aria-label="Фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
+                    <li><a class="footer-social social-instagram" href="#" aria-label="Инстаграм"><span class="visually-hidden">Инстаграм</span></a></li>
+                    <li><a class="footer-social social-twitter" href="#" aria-label="Твиттер"><span class="visually-hidden">Твиттер</span></a></li>
                 </ul>
                 <div class="footer-user-row">
                     <ul class="footer-user-navigation">
                         <li class="footer-login-link"><a href="#">Войти</a></li>
                         <li class="visually-hidden footer-user-logged"><a href="#">Валентин Петухов</a></li>
-                        <li class="visually-hidden footer-unlogin"><a href="#" tabindex="-1">Выйти</a></li>
+                        <li class="visually-hidden footer-unlogin"><a href="#">Выйти</a></li>
                     </ul>
                     <a href="#" class="footer-navigation-compare">Сравнить</a>
                     <a href="#" class="footer-navigation-cart">Корзина</a>
