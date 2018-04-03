@@ -14,8 +14,8 @@
                 <nav class="main-navigation">
                     <p><a class="logo-device" href="index.html">Device</a></p>
                     <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-                        <input class="search-field" name="search-field" type="search" id="search-field" placeholder="Поиск по сайту">
                         <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+                        <input class="search-field" name="search-field" type="search" id="search-field" placeholder="Поиск по сайту">
                         <input class="search-submit" type="submit" id="search-submit" value="Найти">
                         <span class="search-icon"></span>
                     </form>
@@ -29,28 +29,28 @@
                         <a href="#" class="main-navigation-cart">Корзина</a>
                     </div>
                     <ul class="site-navigation">
-                        <li class="site-navigation-item"><a href="#">Каталог товаров</a>
-                            <div class="visually-hidden site-navigation-popup">
-                                <ul class="site-navigation-catalog col-1">
+                        <li class="site-navigation-item popup-catalog-link"><a href="#">Каталог товаров</a>
+                            <div class="site-navigation-popup">
+                                <ul class="site-navigation-catalog">
                                     <li>
                                         <a href="#">Виртуальная реальность</a>
                                     </li>
                                     <li>
-                                        <a class="catalog-current" href="#">Моноподы для селфи</a>
+                                        <a href="#">Моноподы для селфи</a>
                                     </li>
                                     <li>
                                         <a href="#">Экшн-камеры</a>
                                     </li>
                                 </ul>
-                                <ul class="site-navigation-catalog col-2">
+                                <ul class="site-navigation-catalog">
                                     <li>
-                                        <a href="#">Фитнес-браслеты</a>
+                                        <a href="#" >Фитнес-браслеты</a>
                                     </li>
                                     <li>
                                         <a href="#">Умные часы</a>
                                     </li>
                                 </ul>
-                                <ul class="site-navigation-catalog col-3">
+                                <ul class="site-navigation-catalog">
                                     <li>
                                         <a href="#">Квадрокоптеры</a>
                                     </li>
@@ -128,7 +128,7 @@
                                           <label for="filter-bluetooth-yes">Есть</label>
                                       </li>
                                       <li class="filter-option">
-                                          <input id="filter-bluetooth-no" class="visually-hidden filter-bluetooth-option" type="radio" value="bluetoosh-off" name="filter-bluetooth">
+                                          <input id="filter-bluetooth-no" class="visually-hidden filter-bluetooth-option" type="radio" name="filter-bluetooth" value="bluetooth-off" >
                                           <label for="filter-bluetooth-no">Нет</label>
                                       </li>
                                   </ul>

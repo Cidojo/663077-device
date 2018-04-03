@@ -106,7 +106,6 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
 
     margin: 0;
     padding-top: 15px;
@@ -132,6 +131,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation > p:first-of-type {
     margin: 0;
+    margin-bottom: 15px;
     padding: 0;
     width: 100%
 }
@@ -159,8 +159,6 @@ input[type="radio"].visually-hidden {
 .search-form {
     display: flex;
     position: relative;
-
-    margin-top: 12px;
 }
 
 .search-field {
@@ -192,11 +190,10 @@ input[type="radio"].visually-hidden {
 
 .search-icon {
     width: 16px;
-    height: 49px;
+    height: 100%;
     padding: 0 5px;
 
     display: block;
-    align-self: center;
     order: -1;
 
     background-image: url("../img/search.svg");
@@ -271,7 +268,6 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
 
     width: 510px;
-    padding-top: 20px;
 }
 
 .header-user-navigation,
@@ -295,6 +291,7 @@ input[type="radio"].visually-hidden {
 .header-user-navigation li {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     font-size: 15px;
 }
 
@@ -411,11 +408,11 @@ input[type="radio"].visually-hidden {
     margin-top: 28px;
 
     font: inherit;
-    text-transform: uppercase;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
     letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 
 .site-navigation > li:first-of-type {
@@ -477,8 +474,7 @@ input[type="radio"].visually-hidden {
     font-weight: 300;
     line-height: 36px;
     letter-spacing: 0.01em;
-    text-transform: capitalize;
-
+    text-transform: none;
     background-color: #f7e296;
 
     z-index: 1;
@@ -591,11 +587,11 @@ input[type="radio"].visually-hidden {
     content: "";
     position: absolute;
 
-    width: 80px;
+    width: 100px;
     height: 7px;
 
-    left: 0;
-    top: 0;
+    left: 20px;
+    top: 40px;
 
     background-color: #fff;
 }
@@ -679,6 +675,7 @@ input[type="radio"].visually-hidden {
 
 .popular-slider-controls li {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .popular-slider-controls label {
@@ -706,7 +703,7 @@ input[type="radio"].visually-hidden {
     width: 3px;
     height: 3px;
 
-    border: 1px solid #464646;                                   /*             Проверить цвет    */
+    border: 1px solid #000;
     border-radius: 50%;
 
 }
@@ -716,7 +713,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
 
     margin: 0;
-    margin-top: 82px;
+    margin-top: 85px;
     padding: 0;
 
     list-style: none;
@@ -807,21 +804,22 @@ input[type="radio"].visually-hidden {
     margin-top: 80px;
     padding-bottom: 68px;
 
-    background-image: linear-gradient(to bottom, #fff 80px, #e5e5e5 80px);
+    background-image: linear-gradient(to bottom, #fff 100px, #e5e5e5 100px);
     background-repeat: no-repeat;
 
 }
 
 .services-slider-control {
     display: flex;
+    flex: 0 0 285px;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-content: flex-start;
 
     margin: 0;
     padding: 0;
     padding-top: 80px;
 
-    width: 290px;
     min-height: 320px;
 
     border-right: 7px solid #000;
@@ -829,20 +827,6 @@ input[type="radio"].visually-hidden {
 
     list-style: none;
 }
-
-/* .services-slider-control:before {
-    content: "";
-    display: block;
-    position: absolute;
-
-    width: 7px;
-    height: 319px;
-
-    top: 0;
-    left: 277px;
-
-    background-color: #000;
-} */
 
 .services-slider-control li {
     width: 100%;
@@ -855,9 +839,8 @@ input[type="radio"].visually-hidden {
 
 .services-slider-control label {
     display: block;
-    margin-right: 35px;
+    margin-right: 115px;
     margin-left: auto;
-    /* padding: 10px 0; */
 
     width: 160px;
 
@@ -868,29 +851,10 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     color: #000;
-    /* text-align: center; */
 
     cursor: pointer;
     transition: none;
 }
-
-/* .services-slider-button:not(:checked)+label {
-
-    background-image: linear-gradient(180deg, transparent 17px, #f0cf5d 17px, #f0cf5d 18px, #f0c52e 18px, #f0c52e 25px, #f0cf5d 25px, #f0cf5d 26px, transparent 16px);
-    background-position: center;
-}
-
-.services-slider-button:hover:not(:checked)+label {
-    background-image: none;
-    background-color: #f0c52e;
-    transition: 0.25s;
-}
-
- .services-slider-button:focus:not(:checked)+label {
-    background-image: none;
-    background-color: #f0c52e;
-    color: rgba(0, 0, 0, 0.3);
-} */
 
 .services-slider-list {
     margin: 0;
@@ -900,10 +864,6 @@ input[type="radio"].visually-hidden {
 
     list-style: none;
 }
-
-/* .services-slider-list li {
-  margin-left: 120px;
-} */
 
 .services-item p {
     margin: 0;
@@ -978,7 +938,7 @@ input[type="radio"].visually-hidden {
 }
 
 .our-brands {
-    padding-top: 94px;
+    padding-top: 95px;
 }
 
 .brands-list {
@@ -1014,25 +974,23 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: space-between;
 
-    margin-top: 90px;
-    padding-bottom: 78px;
-
+    margin-top: 85px;
 }
 
 .about-us {
-    display: flex;
     position: relative;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 0;
+    flex: 0 0 auto;
+
+    padding: 50px 0;
+
     width: 485px;
 }
 
 .about-us h3,
 .contacts h3 {
-    margin-bottom: 26px;
-
+    margin: 0;
 
     font-size: 47px;
     font-weight: 800;
@@ -1047,18 +1005,20 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us p:first-of-type {
-    margin-bottom: 15px;
+    margin: 0;
+    margin-top: 45px;
 }
 
 .about-us p:last-of-type {
-    margin-bottom: 72px;
+    margin: 0;
+    margin-top: 30px;
 }
 
 .delivery-partners-list {
     margin: 0;
-    margin-bottom: 57px;
-    margin-left: 35px;
+    margin-top: 70px;
     padding: 0;
+    padding-left: 35px;
 
     font-weight: 800;
     color: #000;
@@ -1087,34 +1047,42 @@ input[type="radio"].visually-hidden {
     left: -32px;
 
     border-radius: 50%;
-    box-shadow: 0 0 0 2px #000;
+    box-shadow: 0 0 0 2px #e5e5e5;
 }
 
 .contacts {
-    display: flex;
     position: relative;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 0;
+    flex: 0 0 auto;
+
+    padding: 50px 0;
+
     width: 560px;
 }
 
 .contacts p {
-    margin-bottom: 9px;
+    margin: 0;
+    margin-top: 45px;
 }
 
 .contacts-map {
-  margin-bottom: auto;
+  margin-top: 4px;
 }
 
-.button-link-about-us,
-.button-link-contacts {
+.button-link-about-us {
+    align-self: flex-start;
+
     min-width: 260px;
-    margin-right: auto;
+    margin-top: 60px;
 }
 
 .button-link-contacts {
+    align-self: flex-start;
+
+    min-width: 260px;
+    margin-top: 60px;
+
     order: 1;
 }
 
@@ -1135,7 +1103,40 @@ input[type="radio"].visually-hidden {
 /* Main Footer */
 
 .main-footer {
-    background-image: linear-gradient(to bottom, #fff 4px, #464646 4px);
+    margin-top: 30px;
+    background-color: #464646;
+}
+
+.footer-wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 55px;
+  padding-bottom: 67px;
+}
+
+.footer-wrap::after {
+  content: "";
+  position: absolute;
+
+  width: 80px;
+  height: 7px;
+
+  left: 0;
+  bottom: 75px;
+
+  background-color: #ffc600;
+}
+
+.footer-wrap > p:first-of-type {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+
+  order: 1;
 }
 
 .footer-unlogin {
@@ -1162,37 +1163,6 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
 }
 
-.footer-wrap {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-
-    padding-top: 62px;
-    padding-bottom: 67px;
-}
-
-.footer-wrap::after {
-    content: "";
-    position: absolute;
-
-    width: 80px;
-    height: 7px;
-
-    left: 0;
-    bottom: 79px;
-
-    background-color: #ffc600;
-}
-
-.footer-wrap > p:first-of-type {
-    margin: 0;
-    padding: 0;
-    width: 50%;
-
-    order: 1;
-}
 
 .main-footer .logo-device {
     color: #ffc600;
@@ -1316,6 +1286,7 @@ input[type="radio"].visually-hidden {
 .footer-navigation-compare,
 .footer-navigation-cart {
     display: inline-block;
+    vertical-align: middle;
 
     padding-bottom: 8px;
 }
@@ -1324,6 +1295,7 @@ input[type="radio"].visually-hidden {
     flex-grow: 1;
 
     display: inline-block;
+    vertical-align: middle;
 
     margin-top: 30px;
 
@@ -1334,6 +1306,7 @@ input[type="radio"].visually-hidden {
 
 .footer-navigation li {
     display: inline-block;
+    vertical-align: middle;
 
     margin-right: 32px;
 
@@ -1393,6 +1366,7 @@ input[type="radio"].visually-hidden {
 
 .footer-social-list li {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .footer-social-list li:nth-child(-n+2) {
@@ -1418,6 +1392,10 @@ input[type="radio"].visually-hidden {
     opacity: 0.1;
 }
 
+.footer-social:focus {
+    outline: 1px solid rgba(240,197,46,0.5);
+}
+
 .footer-social-list .social-fb {
     background-image: url("../img/fb.svg");
 }
@@ -1432,6 +1410,7 @@ input[type="radio"].visually-hidden {
 
 .footer-user-column > p {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .footer-copyrights {
@@ -1444,7 +1423,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
 
     right: 0;
-    bottom: 66px;
+    bottom: 60px;
 
     width: 27px;
     height: 35px;
@@ -1694,6 +1673,7 @@ background-color: rgba(0,0,0,0.08);
     content: "";
 
     display: inline-block;
+    vertical-align: middle;
     position: absolute;
     width: 51px;
     margin: auto;
@@ -1794,7 +1774,7 @@ background-color: rgba(0,0,0,0.08);
     opacity: 0.25;
 }
 
-.color-checkbox-option:checked:not(:disabled) + label:hover:::before,
+.color-checkbox-option:checked:not(:disabled) + label:hover::before,
 .color-checkbox-option:not(:checked) + label:hover::before {
     opacity: 0.6;
 }
@@ -1812,6 +1792,11 @@ background-color: rgba(0,0,0,0.08);
 .color-checkbox-option:disabled + label::before,
 .color-checkbox-option:disabled + label {
     opacity: 0.25;
+}
+
+.color-checkbox-option:focus:not(:disabled) + label,
+.filter-bluetooth-option:focus:not(:disabled) + label {
+    outline: 1px solid rgba(240,197,46,0.5);
 }
 
 .filter-form-submit {
@@ -1867,6 +1852,7 @@ background-color: rgba(0,0,0,0.08);
 
 .sorter li {
     display: inline-block;
+    vertical-align: middle;
     font-size: 0;
 }
 
