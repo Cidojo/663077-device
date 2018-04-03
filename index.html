@@ -22,8 +22,9 @@
                     <div class="header-user-column">
                         <ul class="header-user-navigation">
                             <li class="login-link"><a href="#">Войти</a></li>
-                            <li class="visually-hidden user-logged"><a href="#">Валентин Петухов</a></li>
                             <li class="visually-hidden unlogin"><a href="#">Выйти</a></li>
+                            <li class="unlogged-hide user-logged"><a href="#">Валентин Петухов</a></li>
+                            <li class="unlogged-hide unlogin"><a href="#">Выйти</a></li>
                         </ul>
                         <a href="#" class="main-navigation-compare">Сравнить</a>
                         <a href="#" class="main-navigation-cart">Корзина</a>
@@ -33,26 +34,26 @@
                             <div class="site-navigation-popup">
                                 <ul class="site-navigation-catalog">
                                     <li>
-                                        <a href="#">Виртуальная реальность</a>
+                                        <a href="#" tabindex="-1">Виртуальная реальность</a>
                                     </li>
                                     <li>
-                                        <a href="catalog-selfi.html">Моноподы для селфи</a>
+                                        <a href="catalog-selfi.html" tabindex="-1">Моноподы для селфи</a>
                                     </li>
                                     <li>
-                                        <a href="#">Экшн-камеры</a>
-                                    </li>
-                                </ul>
-                                <ul class="site-navigation-catalog">
-                                    <li>
-                                        <a href="#" >Фитнес-браслеты</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Умные часы</a>
+                                        <a href="#" tabindex="-1">Экшн-камеры</a>
                                     </li>
                                 </ul>
                                 <ul class="site-navigation-catalog">
                                     <li>
-                                        <a href="#">Квадрокоптеры</a>
+                                        <a href="#" tabindex="-1">Фитнес-браслеты</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" tabindex="-1">Умные часы</a>
+                                    </li>
+                                </ul>
+                                <ul class="site-navigation-catalog">
+                                    <li>
+                                        <a href="#" tabindex="-1">Квадрокоптеры</a>
                                     </li>
                                 </ul>
                             </div>
@@ -65,7 +66,7 @@
             </div>
         </header>
 
-        <main>
+        <main class="index-main">
             <h2 class="visually-hidden">Магазин Девайс</h2>
             <section class="container popular">
                 <h3 class="visually-hidden">Популярные товары</h3>
@@ -94,7 +95,7 @@
                             <a class="button button-link-about" href="#">Подробнее</a>
                         </div>
                     </li>
-                    <li class="popular-item visually-hidden">
+                    <li class="popular-item popular-slide-hidden">
                         <h4 class="visually-hidden">Фитнес-браслет</h4>
                         <a class="popular-item-image" href="#">
                             <img src="img/slider-2.png" alt="Фитнес-браслет" width="526" height="497">
@@ -115,7 +116,7 @@
                             <a class="button button-link-about" href="#">Подробнее</a>
                         </div>
                     </li>
-                    <li class="popular-item visually-hidden">
+                    <li class="popular-item popular-slide-hidden">
                         <h4 class="visually-hidden">Квадрокоптер</h4>
                         <a class="popular-item-image" href="#">
                             <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="497">
@@ -290,8 +291,8 @@
                 <div class="footer-user-row">
                     <ul class="footer-user-navigation">
                         <li class="footer-login-link"><a href="#">Войти</a></li>
-                        <li class="visually-hidden footer-user-logged"><a href="#">Валентин Петухов</a></li>
-                        <li class="visually-hidden footer-unlogin"><a href="#">Выйти</a></li>
+                        <li class="unlogged-hide footer-user-logged"><a href="#">Валентин Петухов</a></li>
+                        <li class="unlogged-hide footer-unlogin"><a href="#">Выйти</a></li>
                     </ul>
                     <a href="#" class="footer-navigation-compare">Сравнить</a>
                     <a href="#" class="footer-navigation-cart">Корзина</a>
@@ -301,31 +302,150 @@
             </div>
         </footer>
 
-        <section class="modal modal-feedback visually-hidden">
+        <section class="modal modal-feedback">
              <h2 class="visually-hidden">Напишите нам</h2>
-             <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+             <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
                   <p>
                       <label class="feedback-name" for="feedback-name">Ваше имя:</label>
-                      <input id="feedback-name" type="text" name="feedback-name" value="" placeholder="Имя Фамилия">
+                      <input id="feedback-name" type="text" name="feedback-name" value="" placeholder="Имя Фамилия" required>
                   </p>
                   <p>
                       <label class="feedback-email" for="feedback-email">Ваш e-mail:</label>
-                      <input id="feedback-email" type="email" name="feedback-email" value="" placeholder="email@example.com">
+                      <input id="feedback-email" type="email" name="feedback-email" value="" placeholder="email@example.com" required>
                   </p>
                   <p>
                       <label class="feedback-textarea" for="feedback-textarea">Текст письма:</label>
-                      <textarea id="feedback-textarea" name="feedback-textarea" rows="10" placeholder="В свободной форме"></textarea>
+                      <textarea id="feedback-textarea" class="textarea-field" name="feedback-textarea" rows="10" placeholder="В свободной форме" required></textarea>
                   </p>
                   <input class="button feedback-submit" type="submit" value="Отправить">
                   <button class="feedback-close" type="button">Закрыть</button>
              </form>
         </section>
 
-        <section class="modal modal-map visually-hidden">
+        <section class="modal modal-map">
              <h2 class="visually-hidden">Как до нас добраться</h2>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522752615660" width="994" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
              <p><img src="img/map-big.jpg" width="994" height="593" alt="Наш адрес г.Москва, ул. Строителей, 15"></p>
              <button class="map-close" type="button">Закрыть</button>
         </section>
+
+        <script>
+            var writeUsLink = document.querySelector(".button-link-contacts");
+
+            var writeUsModal = document.querySelector(".modal-feedback");
+            var writeUsClose = writeUsModal.querySelector(".feedback-close");
+
+            var writeUsForm = writeUsModal.querySelector(".feedback-form");
+            var feedbackName = writeUsModal.querySelector("[name=feedback-name]");
+            var feedbackEmail = writeUsModal.querySelector("[name=feedback-email]");
+            var feedBackText = writeUsModal.querySelector(".textarea-field");
+            var modalSubmit = writeUsModal.querySelector("[type=submit]");
+
+            var isStorageSupport = true;
+            var storage = "";
+
+            try {
+              storage = localStorage.getItem("feedback-name");
+            } catch (err) {
+              isStorageSupport = false;
+            }
+
+            writeUsLink.addEventListener("click", function (evt) {
+              evt.preventDefault();
+              writeUsModal.classList.add("modal-show");
+              feedbackName.focus();
+            });
+
+            // if (storage) {
+            //   feedbackName.value = storage.value;
+            //   feedbackEmail.focus();
+            // } else {
+            //     feedbackName.focus();
+                // storage = localStorage.getItem("feedback-email)");
+                // if (storage) {
+                //   feedbackEmail.value = storage.value;
+                //   feedBackText.focus();}
+                // };
+
+                modalSubmit.addEventListener("click", function (evt) {
+                  if (!feedbackName.value || !feedbackEmail.value || !feedbackText.value) {
+                    evt.preventDefault();
+                    writeUsModal.classList.remove("modal-error");
+                    writeUsModal.offsetWidth = writeUsModal.offsetWidth;
+                    writeUsModal.classList.add("modal-error");
+                  }
+                   else {
+                            if (isStorageSupport) {
+                              localStorage.setItem("feedbackName", feedbackName.value);
+                              localStorage.setItem("feedbackEmail", feedbackEmail.value);
+                          }}
+                });
+
+
+
+
+            // writeUsForm.addEventListener("submit", function (evt) {
+            //   if (!feedbackName.value || !feedbackEmail.value || !feedbackText.value) {
+            //     evt.preventDefault();
+            //     writeUsModal.classList.remove("modal-error");
+            //     writeUsModal.offsetWidth = writeUsModal.offsetWidth;
+            //     writeUsModal.classList.add("modal-error");
+            //     console.log("Заполните все поля формы");
+            //   } else {
+            //         if (isStorageSupport) {
+            //           localStorage.setItem("feedbackName", feedbackName.value);
+            //           localStorage.setItem("feedbackEmail", feedbackEmail.value);
+            //         }
+            //   }
+            // });
+
+            writeUsClose.addEventListener("click", function (evt) {
+              evt.preventDefault();
+              writeUsModal.classList.remove("modal-show");
+              writeUsModal.classList.remove("modal-error");
+            });
+
+            var modalMapLink = document.querySelector(".contacts-map");
+
+            var mapModal = document.querySelector(".modal-map");
+            var mapModalClose = mapModal.querySelector(".map-close");
+
+            modalMapLink.addEventListener("click", function (evt) {
+              evt.preventDefault();
+              mapModal.classList.add("modal-show");
+            });
+
+            mapModalClose.addEventListener("click", function (evt) {
+              evt.preventDefault();
+              mapModal.classList.remove("modal-show");
+            });
+
+            window.addEventListener("keydown", function (evt) {
+              // evt.preventDefault();
+              if (evt.keyCode === 27) {
+                if (mapModal.classList.contains("modal-show")) {
+                  mapModal.classList.remove("modal-show");
+                }
+                if (writeUsModal.classList.contains("modal-show")) {
+                  writeUsModal.classList.remove("modal-show")
+                  writeUsModal.classList.remove("modal-error");
+                }
+              }
+            });
+
+            function GetKeyCode(evt) {
+              var keyCode;
+
+              if(evt.keyCode > 0) {
+                  keyCode = evt.keyCode;
+              }
+              else if(typeof(evt.charCode) != "undefined") {
+                  keyCode = evt.charCode;
+              }
+              alert("You pressed : " + keyCode);
+            };
+
+        </script>
 
     </body>
 </html>
