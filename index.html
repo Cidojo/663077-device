@@ -5,7 +5,7 @@
       <title>HTML Academy: Девайс</title>
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
       <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
 
@@ -141,15 +141,15 @@
                 </ol>
                 <ul class="popular-slider-controls">
                     <li>
-                        <input class="popular-slider-button" id="popular-slider-1-btn" type="radio" name="popular-slider" checked>
+                        <input class="popular-slider-button visually-hidden" id="popular-slider-1-btn" type="radio" name="popular-slider" checked>
                         <label for="popular-slider-1-btn"><span class="visually-hidden">Слайдер 1</span></label>
                     </li>
                     <li>
-                        <input class="popular-slider-button" id="popular-slider-2-btn" type="radio" name="popular-slider">
+                        <input class="popular-slider-button visually-hidden" id="popular-slider-2-btn" type="radio" name="popular-slider">
                         <label for="popular-slider-2-btn"><span class="visually-hidden">Слайдер 2</span></label>
                     </li>
                     <li>
-                        <input class="popular-slider-button" id="popular-slider-3-btn" type="radio" name="popular-slider">
+                        <input class="popular-slider-button visually-hidden" id="popular-slider-3-btn" type="radio" name="popular-slider">
                         <label for="popular-slider-3-btn"><span class="visually-hidden">Слайдер 3</span></label>
                     </li>
                 </ul>
@@ -218,12 +218,12 @@
                             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
                                Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                         </li>
-                        <li class="services-item visually-hidden">
+                        <li class="services-item services-slide-hidden">
                             <p>Гарантия</p>
                             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом &mdash; не переживайте,
                                мы выдадим вам новый.<br/> Товар, не дом, конечно-же.</p>
                         </li>
-                        <li class="services-item visually-hidden">
+                        <li class="services-item services-slide-hidden">
                             <p>Кредит</p>
                             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
                               Выгодные для нашего банка, разумеется.</p>
@@ -236,19 +236,15 @@
                 <ul class="brands-list">
                     <li class="brands-item">
                         <a class="pale" href="#"><img src="img/logodjipale.png" alt="Логотип DJI" width="260" height="100"></a>
-                        <a class="color" href="#"><img src="img/logodjicolor.png" alt="Логотип DJI" width="260" height="100"></a>
                     </li>
                     <li class="brands-item">
                         <a class="pale" href="#"><img src="img/spgadgetspale.png" alt="Логотип SPGadgets" width="260" height="100"></a>
-                        <a class="color" href="#"><img src="img/spgadgetscolor.png" alt="Логотип SPGadgets" width="260" height="100"></a>
                     </li>
                     <li class="brands-item">
                         <a class="pale" href="#"><img src="img/logogopropale.png" alt="Логотип GoPro" width="260" height="100"></a>
-                        <a class="color" href="#"><img src="img/logogoprocolor.png" alt="Логотип GoPro" width="260" height="100"></a>
                     </li>
                     <li class="brands-item">
                         <a class="pale" href="#"><img src="img/logovivepale.png" alt="Логотип Vive" width="260" height="100"></a>
-                        <a class="color" href="#"><img src="img/logovivecolor.png" alt="Логотип Vive" width="260" height="100"></a>
                     </li>
                 </ul>
             </section>
@@ -267,7 +263,7 @@
                 <section class="contacts">
                     <h3>Контакты</h3>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает</p>
-                    <a class="button button-link-contacts" href="writeus-form.html">Напишите нам</a> <br>
+                    <a class="button button-link-contacts" href="writeus-form.html">Напишите нам</a>
                     <a class="contacts-map" href="index-map.html"><img src="img/map.jpg" class="contacts-map" alt="Наш адрес г.Москва, ул. Строителей, 15" width="560" height="222"></a>
                 </section>
             </div>
@@ -323,128 +319,11 @@
 
         <section class="modal modal-map">
              <h2 class="visually-hidden">Как до нас добраться</h2>
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522752615660" width="994" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522752615660" width="994" height="593" style="border:0" allowfullscreen></iframe>
              <p><img src="img/map-big.jpg" width="994" height="593" alt="Наш адрес г.Москва, ул. Строителей, 15"></p>
              <button class="map-close" type="button">Закрыть</button>
         </section>
 
-        <script>
-            var writeUsLink = document.querySelector(".button-link-contacts");
-
-            var writeUsModal = document.querySelector(".modal-feedback");
-            var writeUsClose = writeUsModal.querySelector(".feedback-close");
-
-            var writeUsForm = writeUsModal.querySelector(".feedback-form");
-            var feedbackName = writeUsModal.querySelector("[name=feedback-name]");
-            var feedbackEmail = writeUsModal.querySelector("[name=feedback-email]");
-            var feedBackText = writeUsModal.querySelector(".textarea-field");
-            var modalSubmit = writeUsModal.querySelector("[type=submit]");
-
-            var isStorageSupport = true;
-            var storage = "";
-
-            try {
-              storage = localStorage.getItem("feedback-name");
-            } catch (err) {
-              isStorageSupport = false;
-            }
-
-            writeUsLink.addEventListener("click", function (evt) {
-              evt.preventDefault();
-              writeUsModal.classList.add("modal-show");
-              feedbackName.focus();
-            });
-
-            // if (storage) {
-            //   feedbackName.value = storage.value;
-            //   feedbackEmail.focus();
-            // } else {
-            //     feedbackName.focus();
-                // storage = localStorage.getItem("feedback-email)");
-                // if (storage) {
-                //   feedbackEmail.value = storage.value;
-                //   feedBackText.focus();}
-                // };
-
-                modalSubmit.addEventListener("click", function (evt) {
-                  if (!feedbackName.value || !feedbackEmail.value || !feedbackText.value) {
-                    evt.preventDefault();
-                    writeUsModal.classList.remove("modal-error");
-                    writeUsModal.offsetWidth = writeUsModal.offsetWidth;
-                    writeUsModal.classList.add("modal-error");
-                  }
-                   else {
-                            if (isStorageSupport) {
-                              localStorage.setItem("feedbackName", feedbackName.value);
-                              localStorage.setItem("feedbackEmail", feedbackEmail.value);
-                          }}
-                });
-
-
-
-
-            // writeUsForm.addEventListener("submit", function (evt) {
-            //   if (!feedbackName.value || !feedbackEmail.value || !feedbackText.value) {
-            //     evt.preventDefault();
-            //     writeUsModal.classList.remove("modal-error");
-            //     writeUsModal.offsetWidth = writeUsModal.offsetWidth;
-            //     writeUsModal.classList.add("modal-error");
-            //     console.log("Заполните все поля формы");
-            //   } else {
-            //         if (isStorageSupport) {
-            //           localStorage.setItem("feedbackName", feedbackName.value);
-            //           localStorage.setItem("feedbackEmail", feedbackEmail.value);
-            //         }
-            //   }
-            // });
-
-            writeUsClose.addEventListener("click", function (evt) {
-              evt.preventDefault();
-              writeUsModal.classList.remove("modal-show");
-              writeUsModal.classList.remove("modal-error");
-            });
-
-            var modalMapLink = document.querySelector(".contacts-map");
-
-            var mapModal = document.querySelector(".modal-map");
-            var mapModalClose = mapModal.querySelector(".map-close");
-
-            modalMapLink.addEventListener("click", function (evt) {
-              evt.preventDefault();
-              mapModal.classList.add("modal-show");
-            });
-
-            mapModalClose.addEventListener("click", function (evt) {
-              evt.preventDefault();
-              mapModal.classList.remove("modal-show");
-            });
-
-            window.addEventListener("keydown", function (evt) {
-              // evt.preventDefault();
-              if (evt.keyCode === 27) {
-                if (mapModal.classList.contains("modal-show")) {
-                  mapModal.classList.remove("modal-show");
-                }
-                if (writeUsModal.classList.contains("modal-show")) {
-                  writeUsModal.classList.remove("modal-show")
-                  writeUsModal.classList.remove("modal-error");
-                }
-              }
-            });
-
-            function GetKeyCode(evt) {
-              var keyCode;
-
-              if(evt.keyCode > 0) {
-                  keyCode = evt.keyCode;
-              }
-              else if(typeof(evt.charCode) != "undefined") {
-                  keyCode = evt.charCode;
-              }
-              alert("You pressed : " + keyCode);
-            };
-
-        </script>
-
+        <script src="js/scripts.min.js"></script>
     </body>
 </html>
