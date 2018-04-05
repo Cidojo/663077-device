@@ -175,6 +175,7 @@ input[type="radio"].visually-hidden {
 }
 
 .logo-device {
+    font: inherit;
     font-size: 48px;
     line-height: 48px;
     font-weight: 800;
@@ -199,13 +200,14 @@ input[type="radio"].visually-hidden {
     display: -ms-flexbox;
     display: flex;
     position: relative;
+
+    min-height: 49px;
 }
 
 .search-field {
-    width: 336px;
+    width: 330px;
     margin: 2px 0;
-    padding: 10px;
-    padding-left: 14px;
+    padding: 0 10px 15px 15px;
     background-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -231,10 +233,12 @@ input[type="radio"].visually-hidden {
 .search-submit {
     margin-top: 0;
     padding: 0;
-    width: 81px;
-    padding: 10px;
+    width: 85px;
+    height: 49px;
 
+    font:inherit;
     font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
 
     -webkit-box-shadow: none;
 
@@ -257,13 +261,20 @@ input[type="radio"].visually-hidden {
 
     background-image: url("../img/search.svg");
     background-repeat: no-repeat;
-    background-position: bottom 16px center;
+    background-position-x: center;
+}
 
+.search-field:focus ~ .search-icon {
+    background-position: bottom 15px center;
 }
 
 .search-field:focus,
 .search-submit:focus {
     outline: none;
+}
+
+.search-field:focus {
+    padding-bottom: 0;
 }
 
 .search-field:focus::-webkit-input-placeholder {
@@ -282,19 +293,19 @@ input[type="radio"].visually-hidden {
     color: rgba(0,0,0,1);
 }
 
-.search-field:hover:not(:focus)::-webkit-input-placeholder {
+.search-field:hover::-webkit-input-placeholder {
     color: rgba(0,0,0,0.6);
 }
 
-.search-field:hover:not(:focus):-ms-input-placeholder {
+.search-field:hover:-ms-input-placeholder {
     color: rgba(0,0,0,0.6);
 }
 
-.search-field:hover:not(:focus)::-ms-input-placeholder {
+.search-field:hover::-ms-input-placeholder {
     color: rgba(0,0,0,0.6);
 }
 
-.search-field:hover:not(:focus)::placeholder {
+.search-field:hover::placeholder {
     color: rgba(0,0,0,0.6);
 }
 
@@ -362,6 +373,7 @@ input[type="radio"].visually-hidden {
 .main-navigation-cart,
 .main-navigation-compare,
 .search-field::-webkit-input-placeholder  {
+    font: inherit;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
 }
@@ -370,6 +382,7 @@ input[type="radio"].visually-hidden {
 .main-navigation-cart,
 .main-navigation-compare,
 .search-field:-ms-input-placeholder  {
+    font: inherit;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
 }
@@ -378,6 +391,7 @@ input[type="radio"].visually-hidden {
 .main-navigation-cart,
 .main-navigation-compare,
 .search-field::-ms-input-placeholder  {
+    font: inherit;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
 }
@@ -386,6 +400,7 @@ input[type="radio"].visually-hidden {
 .main-navigation-cart,
 .main-navigation-compare,
 .search-field::placeholder  {
+    font: inherit;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
 }
@@ -524,7 +539,7 @@ input[type="radio"].visually-hidden {
     position: relative;
 
     width: 100%;
-    margin-top: 28px;
+    margin-top: 20px;
 
     font: inherit;
     font-size: 18px;
@@ -724,6 +739,7 @@ input[type="radio"].visually-hidden {
     margin-top: 80px;
     z-index: 0;
 
+    font: inherit;
     font-size: 47px;
     font-weight: 800;
     line-height: 56px;
@@ -1247,6 +1263,7 @@ input[type="radio"].visually-hidden {
 .contacts h3 {
     margin: 0;
 
+    font: inherit;
     font-size: 47px;
     font-weight: 800;
     line-height: 48px;
@@ -1254,6 +1271,7 @@ input[type="radio"].visually-hidden {
 
 .about-us p,
 .contacts p {
+    font: inherit;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     color: #464646;
@@ -1275,6 +1293,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     padding-left: 35px;
 
+    font: inherit;
     font-weight: 800;
     color: #000;
 
@@ -1562,6 +1581,7 @@ input[type="radio"].visually-hidden {
 .footer-navigation-cart,
 .footer-phone,
 .footer-contacts {
+    font: inherit;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     font-size: 15px;
@@ -1581,7 +1601,7 @@ input[type="radio"].visually-hidden {
         -ms-flex-positive: 1;
             flex-grow: 1;
 
-    margin-top: 25px;
+    margin-top: 20px;
 
     text-align: center;
 
@@ -1598,6 +1618,7 @@ input[type="radio"].visually-hidden {
 
     margin-right: 32px;
 
+    font: inherit;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
@@ -1755,6 +1776,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 20px;
     padding: 0;
 
+    font: inherit;
     font-size: 47px;
     line-height: 48px;
     font-weight: 800;
@@ -1774,6 +1796,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 47px;
     margin-left: 60px;
 
+    font: inherit;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -1867,6 +1890,7 @@ background-color: rgba(0,0,0,0.08);
 
 .filter-title,
 .sorter-title {
+    font: inherit;
     font-weight: 800;
     font-size: 16px;
     line-height: 24px;
@@ -1906,6 +1930,7 @@ background-color: rgba(0,0,0,0.08);
 
     padding-top: 10px;
 
+    font: inherit;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
@@ -1930,6 +1955,7 @@ background-color: rgba(0,0,0,0.08);
     padding: 0;
     list-style: none;
 
+    font: inherit;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 40px;
@@ -2001,6 +2027,7 @@ background-color: rgba(0,0,0,0.08);
     margin: auto;
     margin-top: 13px;
 
+    font: inherit;
     font-size: 14px;
     line-height: 24px;
     font-weight: normal;
@@ -2162,6 +2189,7 @@ background-color: rgba(0,0,0,0.08);
 .sort-by-list,
 .sort-by-item-current,
 .sort-by-item a {
+    font: inherit;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -2184,6 +2212,7 @@ background-color: rgba(0,0,0,0.08);
 .sorter li {
     display: inline-block;
     vertical-align: baseline;
+    font: inherit;
     font-size: 0;
 }
 
@@ -2207,6 +2236,7 @@ background-color: rgba(0,0,0,0.08);
 
 .sort-by-list a,
 .sort-by-order a {
+    font: inherit;
     font-size: 14px;
 }
 
@@ -2294,6 +2324,7 @@ background-color: rgba(0,0,0,0.08);
     margin-top: 10px;
     padding: 0;
 
+    font: inherit;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
@@ -2325,6 +2356,7 @@ background-color: rgba(0,0,0,0.08);
     margin: 0;
     padding: 0;
 
+    font: inherit;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
@@ -2388,6 +2420,7 @@ background-color: rgba(0,0,0,0.08);
     bottom: 134px;
     left: 109px;
 
+    font: inherit;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     font-size: 13px;
@@ -2418,6 +2451,7 @@ background-color: rgba(0,0,0,0.08);
     right: 40px;
     top: 43px;
 
+    font: inherit;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.05em;
@@ -2474,6 +2508,7 @@ background-color: rgba(0,0,0,0.08);
     position: relative;
     display: table-cell;
 
+    font: inherit;
     font-size: 16px;
     line-height: 24px;
     font-weight: 800;
@@ -2714,11 +2749,51 @@ background-color: rgba(0,0,0,0.08);
     width: 360px;
 }
 
-.feedback-form input[placeholder],
+.feedback-form input::-webkit-input-placeholder,
 .feedback-form textarea {
     padding: 15px 20px;
     padding-right: 0;
 
+    font: inherit;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+}
+
+.feedback-form input:-ms-input-placeholder,
+.feedback-form textarea {
+    padding: 15px 20px;
+    padding-right: 0;
+
+    font: inherit;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+}
+
+.feedback-form input::-ms-input-placeholder,
+.feedback-form textarea {
+    padding: 15px 20px;
+    padding-right: 0;
+
+    font: inherit;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea {
+    padding: 15px 20px;
+    padding-right: 0;
+
+    font: inherit;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -2733,6 +2808,7 @@ background-color: rgba(0,0,0,0.08);
 
     width: 100%;
 
+    font: inherit;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
