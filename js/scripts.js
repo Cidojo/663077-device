@@ -1,6 +1,12 @@
 
-    var popularSlidesList = document.querySelectorAll(".popular-item");
-    var popularControlsList = document.querySelectorAll(".popular-slider-button");
+    var popularSlidesListQuery = document.querySelectorAll(".popular-item");
+    var popularControlsListQuery = document.querySelectorAll(".popular-slider-button");
+
+    var popularControlsList = Array.prototype.slice.call(popularControlsListQuery);
+    var popularSlidesList = Array.prototype.slice.call(popularSlidesListQuery);
+
+
+
 
     popularControlsList.forEach( function(item, id) {
         popularControlsList[id].addEventListener("click", function (evt) {
@@ -15,8 +21,11 @@
     });
 
 
-    var servicesSlidesList = document.querySelectorAll(".services-item");
-    var servicesControlsList = document.querySelectorAll(".services-slider-button");
+    var servicesSlidesListQuery = document.querySelectorAll(".services-item");
+    var servicesControlsListQuery = document.querySelectorAll(".services-slider-button");
+
+    var servicesSlidesList = Array.prototype.slice.call(servicesSlidesListQuery);
+    var servicesControlsList = Array.prototype.slice.call(servicesControlsListQuery);
 
     servicesControlsList.forEach( function(item, id) {
         servicesControlsList[id].addEventListener("click", function (evt) {
@@ -77,12 +86,14 @@
               writeUsModal.classList.remove("modal-error");
               writeUsModal.offsetWidth = writeUsModal.offsetWidth;
               writeUsModal.classList.add("modal-error");
-        } else {
+        }
+        else {
             if (isStorageSupport) {
-                  localStorage.setItem("feedbackName", feedbackName.value);
-                  localStorage.setItem("feedbackEmail", feedbackEmail.value);
+                  localStorage.setItem("feedback-name", feedbackName.value);
+                  localStorage.setItem("feedback-email", feedbackEmail.value);
             }
           }
+
     });
 
     writeUsClose.addEventListener("click", function (evt) {
