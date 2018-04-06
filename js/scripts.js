@@ -69,8 +69,8 @@
     });
 
     if (storage) {
-        feedbackName.value = localStorage.getItem("feedback-name").value;
-        feedbackEmail.value = localStorage.getItem("feedback-email").value;
+        feedbackName.value = localStorage.getItem("feedback-name");
+        feedbackEmail.value = localStorage.getItem("feedback-email");
         if (feedbackEmail.value) {
             feedbackText.focus();
         } else {
